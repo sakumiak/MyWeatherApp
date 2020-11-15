@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+    android:id="@+id/cityText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="City"
+    android:textAlignment="center"
+    android:textSize="30dp"
+    />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textSize="80dp" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min temp:"
+            android:textSize="20dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tempMinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="20dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max temp"
+            android:textSize="20dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tempMaxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="20dp"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"/>
+
+
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/cityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change City" />
+
+</LinearLayout>
